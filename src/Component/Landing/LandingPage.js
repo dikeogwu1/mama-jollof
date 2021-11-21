@@ -1,19 +1,34 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
+// import global store
+import { useGlobalContext } from '../Global/Context'
 
 const LandingPage = () => {
+  const inputContainer = useRef(null)
+  const { setSearch } = useGlobalContext()
+
+  const Submit = (e) => {
+    e.preventDefault()
+  }
+
+  const searchItem = () => {
+    if (inputContainer.current.value) {
+      setSearch(inputContainer.current.value)
+    }
+  }
+
   return (
     <main>
       <header className='parent'>
-        <nav class='navbar navbar-expand-lg navbar-dark'>
-          <div class='container-fluid'>
-            <Link to='/' class='navbar-brand logo' href='#'>
+        <nav className='navbar navbar-expand-lg navbar-dark'>
+          <div className='container-fluid'>
+            <Link to='/' className='navbar-brand logo' href='#'>
               <span className='mama'>mama</span>
               <span className='jollof'>Jollof</span>
             </Link>
             <button
-              class='navbar-toggler'
+              className='navbar-toggler'
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#navbarSupportedContent'
@@ -21,64 +36,68 @@ const LandingPage = () => {
               aria-expanded='false'
               aria-label='Toggle navigation'
             >
-              <span class='navbar-toggler-icon'></span>
+              <span className='navbar-toggler-icon'></span>
             </button>
-            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-              <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
-                <li class='nav-item'>
-                  <Link
-                    to='/'
-                    class='nav-link active'
-                    aria-current='page'
-                    href='#'
-                  >
+            <div
+              className='collapse navbar-collapse'
+              id='navbarSupportedContent'
+            >
+              <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+                <li className='nav-item'>
+                  <Link to='/' className='nav-link active' aria-current='page'>
                     <span className='d-active'>Home</span>
                   </Link>
                 </li>
                 {/* dropdown */}
 
-                <li class='nav-item dropdown more-pages'>
-                  <a
-                    class='nav-link dropdown-toggle'
+                <li className='nav-item dropdown more-pages'>
+                  <div
+                    className='nav-link dropdown-toggle'
                     id='navbarDropdown'
                     role='button'
                     data-bs-toggle='dropdown'
                     aria-expanded='false'
                   >
                     <span className='mover'>Services</span>
-                  </a>
-                  <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                  </div>
+                  <ul
+                    className='dropdown-menu'
+                    aria-labelledby='navbarDropdown'
+                  >
                     <li>
-                      <Link to='/about' class='dropdown-item'>
+                      <Link to='/about' className='dropdown-item'>
                         <span className='mover'>About</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to='/contact' class='dropdown-item'>
+                      <Link to='/contact' className='dropdown-item'>
                         <span className='mover'>Contact</span>
                       </Link>
                     </li>
                     <li>
-                      <hr class='dropdown-divider' />
+                      <hr className='dropdown-divider' />
                     </li>
                     <li>
-                      <Link to='/recipe' class='dropdown-item'>
-                        <span className='mover'>Recipe</span>
+                      <Link to='/recipe' className='dropdown-item'>
+                        <span className='mover'>Our menu</span>
                       </Link>
                     </li>
                   </ul>
                 </li>
               </ul>
-              <form class='d-flex more-pages'>
+              <form className='d-flex more-pages' onClick={Submit}>
                 <input
-                  class='form-control me-2'
+                  className='form-control me-2'
                   type='search'
                   placeholder='Search'
                   aria-label='Search'
+                  ref={inputContainer}
                 />
-                <button class='btn btn-outline-success' type='submit'>
-                  Search
-                </button>
+                <Link to='/recipe' onClick={searchItem}>
+                  <button className='btn btn-outline-success' type='submit'>
+                    Search
+                  </button>
+                </Link>
               </form>
             </div>
           </div>
@@ -319,17 +338,17 @@ const LandingPage = () => {
         <article className='px-3 px-sm-5 bg-white'>
           <div
             id='carouselExampleControls'
-            class='carousel slide'
+            className='carousel slide'
             data-bs-ride='carousel'
           >
-            <div class='carousel-inner'>
-              <div class='carousel-item active'>
+            <div className='carousel-inner'>
+              <div className='carousel-item active'>
                 <div className='chefs-img-wrapper row bg-white'>
                   <div className='col-3 text-center'>
                     <div className='mr-chef '>
                       <img
                         src='https://res.cloudinary.com/dikeogwu1/image/upload/v1637225493/mama%20jollof/mem4_wzqw1s.jpg'
-                        class='d-block w-100'
+                        className='d-block w-100'
                         alt='chef'
                       />
                     </div>
@@ -341,7 +360,7 @@ const LandingPage = () => {
                     <div className='mr-chef'>
                       <img
                         src='https://res.cloudinary.com/dikeogwu1/image/upload/v1637225447/mama%20jollof/mem3_tzbffm.jpg'
-                        class='d-block w-100'
+                        className='d-block w-100'
                         alt='chef'
                       />
                     </div>
@@ -352,7 +371,7 @@ const LandingPage = () => {
                     <div className='mr-chef'>
                       <img
                         src='https://res.cloudinary.com/dikeogwu1/image/upload/v1637225423/mama%20jollof/mem2_j31civ.jpg'
-                        class='d-block w-100'
+                        className='d-block w-100'
                         alt='chef'
                       />
                     </div>
@@ -363,7 +382,7 @@ const LandingPage = () => {
                     <div className='mr-chef'>
                       <img
                         src='https://res.cloudinary.com/dikeogwu1/image/upload/v1637225383/mama%20jollof/mem1_pe64rl.jpg'
-                        class='d-block w-100'
+                        className='d-block w-100'
                         alt='chef'
                       />
                     </div>
@@ -373,13 +392,13 @@ const LandingPage = () => {
                 </div>
               </div>
               {/* second carousel */}
-              <div class='carousel-item'>
+              <div className='carousel-item'>
                 <div className='chefs-img-wrapper bg-white row'>
                   <div className='col-3 text-center'>
                     <div className='mr-chef'>
                       <img
                         src='https://res.cloudinary.com/dikeogwu1/image/upload/v1637225383/mama%20jollof/mem1_pe64rl.jpg'
-                        class='d-block w-100'
+                        className='d-block w-100'
                         alt='chef'
                       />
                     </div>
@@ -390,7 +409,7 @@ const LandingPage = () => {
                     <div className='mr-chef'>
                       <img
                         src='https://res.cloudinary.com/dikeogwu1/image/upload/v1637080155/mama%20jollof/authour1_u5ltaz.jpg'
-                        class='d-block w-100'
+                        className='d-block w-100'
                         alt='chef'
                       />
                     </div>
@@ -401,7 +420,7 @@ const LandingPage = () => {
                     <div className='mr-chef'>
                       <img
                         src='https://res.cloudinary.com/dikeogwu1/image/upload/v1637225423/mama%20jollof/mem2_j31civ.jpg'
-                        class='d-block w-100'
+                        className='d-block w-100'
                         alt='chef'
                       />
                     </div>
@@ -412,7 +431,7 @@ const LandingPage = () => {
                     <div className='mr-chef'>
                       <img
                         src='https://res.cloudinary.com/dikeogwu1/image/upload/v1637079215/mama%20jollof/graph_d6lfim.png'
-                        class='d-block w-100'
+                        className='d-block w-100'
                         alt='chef'
                       />
                     </div>
@@ -423,28 +442,28 @@ const LandingPage = () => {
               </div>
             </div>
             <button
-              class='carousel-control-prev'
+              className='carousel-control-prev'
               type='button'
               data-bs-target='#carouselExampleControls'
               data-bs-slide='prev'
             >
               <span
-                class='carousel-control-prev-icon'
+                className='carousel-control-prev-icon'
                 aria-hidden='true'
               ></span>
-              <span class='visually-hidden'>Previous</span>
+              <span className='visually-hidden'>Previous</span>
             </button>
             <button
-              class='carousel-control-next'
+              className='carousel-control-next'
               type='button'
               data-bs-target='#carouselExampleControls'
               data-bs-slide='next'
             >
               <span
-                class='carousel-control-next-icon'
+                className='carousel-control-next-icon'
                 aria-hidden='true'
               ></span>
-              <span class='visually-hidden'>Next</span>
+              <span className='visually-hidden'>Next</span>
             </button>
           </div>
         </article>

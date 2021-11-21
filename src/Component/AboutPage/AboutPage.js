@@ -6,14 +6,14 @@ const AboutPage = () => {
   return (
     <div>
       <div className='nav-box'>
-        <nav class='navbar navbar-expand-lg navbar-light mx-sm-5 my-sm-3'>
-          <div class='container-fluid'>
-            <Link to='/' class='navbar-brand logo' href='#'>
+        <nav className='navbar navbar-expand-lg navbar-light mx-sm-5 my-sm-3'>
+          <div className='container-fluid'>
+            <Link to='/' className='navbar-brand logo' href='#'>
               <span className='mama'>mama</span>
               <span className='jollof'>Jollof</span>
             </Link>
             <button
-              class='navbar-toggler btn-primary '
+              className='navbar-toggler btn-primary '
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#navbarSupportedContent'
@@ -21,22 +21,25 @@ const AboutPage = () => {
               aria-expanded='false'
               aria-label='Toggle navigation'
             >
-              <span class='navbar-toggler-icon'></span>
+              <span className='navbar-toggler-icon'></span>
             </button>
-            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-              <ul class='navbar-nav me-auto mb-2 mb-lg-0 bg-white'>
-                <li class='nav-item'>
-                  <Link to='/' class='nav-link ' aria-current='page'>
+            <div
+              className='collapse navbar-collapse'
+              id='navbarSupportedContent'
+            >
+              <ul className='navbar-nav me-auto mb-2 mb-lg-0 bg-white'>
+                <li className='nav-item'>
+                  <Link to='/' className='nav-link ' aria-current='page'>
                     <span className='mover'>Home</span>
                   </Link>
                 </li>
-                <li class='nav-item'>
-                  <Link to='/about' class='nav-link'>
+                <li className='nav-item'>
+                  <Link to='/about' className='nav-link'>
                     <span className='d-active'>About</span>
                   </Link>
                 </li>
-                <li class='nav-item'>
-                  <Link to='/recipe' class='nav-link mover'>
+                <li className='nav-item'>
+                  <Link to='/recipe' className='nav-link mover'>
                     <span className='mover'>Recipe</span>
                   </Link>
                 </li>

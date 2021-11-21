@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Error from './pages/Error'
 import Home from './pages/Home'
 import Recipe from './pages/Recipe'
+import Single from './pages/Single'
 
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
 
           {/* contact page */}
           <Route path='/contact' element={<Contact />} />
+
+          {/* single meal page */}
+          <Route path='/single/:id' element={<Single />} />
 
           {/* error page */}
           <Route path='*' element={<Error />} />
