@@ -1,9 +1,12 @@
 import React from 'react'
+import SingleItem from '../Component/Single/SingleItem'
+import Footer from '../Component/Footer/Footer'
 
 const Single = () => {
   return (
     <div>
-      <h1>hello from single</h1>
+      <SingleItem />
+      <Footer />
     </div>
   )
 }
