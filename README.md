@@ -1,8 +1,12 @@
 # details
 
-this project was built using react js,
+PROJECT LIBRARY:
+reactjs.
 
-FRAME WORK AND LIB: bootstrap 5 and custom css,axios for fetching of api data,and context api for data management
+FRAME WORK AND EXTERNAL LIBRARY:
+bootstrap 5 and custom css,
+axios for fetching of api data,
+and context api for data management
 
 #### React Router Fix
 

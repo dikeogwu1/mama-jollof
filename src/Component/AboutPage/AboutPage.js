@@ -40,7 +40,7 @@ const AboutPage = () => {
                 </li>
                 <li className='nav-item'>
                   <Link to='/recipe' className='nav-link mover'>
-                    <span className='mover'>Recipe</span>
+                    <span className='mover'>Our menu</span>
                   </Link>
                 </li>
               </ul>

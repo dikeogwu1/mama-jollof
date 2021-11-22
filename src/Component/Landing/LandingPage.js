@@ -170,7 +170,7 @@ const LandingPage = () => {
             />
           </div>
         </div>
-        <div className='story-text-wrapper col-sm-6'>
+        <div className='mb-5 col-sm-6'>
           <h3>our history</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
@@ -187,9 +187,9 @@ const LandingPage = () => {
       </article>
 
       {/* our restaurant */}
-      <article className='story-box  row mx-2 mx-sm-5 mb-3 justify-content-sm-evenly align-items-center'>
+      <article className='story-box  row mx-2 mx-sm-5 mb-0 mb-sm-4 justify-content-sm-evenly align-items-center'>
         {/* our restaurant article */}
-        <div className='story-text-wrapper col-sm-6'>
+        <div className='mb-0 mb-sm-5 col-sm-6'>
           <h3>our restaurant</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam

@@ -158,10 +158,10 @@ NAV
 }
 
 .story-img-wrapper-1 {
-  height: 400px;
+  height: 280px;
 }
 .story-img-wrapper-2 {
-  height: 440px;
+  height: 280px;
 }
 
 .story-img-wrapper-1 img,
@@ -272,6 +272,14 @@ NAV
 
   .ready-text {
     display: block;
+  }
+
+  .story-img-wrapper-1 {
+    height: 400px;
+  }
+
+  .story-img-wrapper-2 {
+    height: 430px;
   }
 }
 
