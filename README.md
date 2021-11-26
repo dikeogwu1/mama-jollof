@@ -3,10 +3,14 @@
 PROJECT LIBRARY:
 reactjs.
 
-FRAME WORK AND EXTERNAL LIBRARY:
-bootstrap 5 and custom css,
-axios for fetching of api data,
-and context api for data management
+FRAME WORK: bootstrap 5 and custom css.
+
+EXTERNAL LIBRARY: axios.
+for fetching of api data.
+
+STATE MANAGEMENT LIB: context api.
+
+HOSTING PROVIDER: netlify.
 
 #### React Router Fix
 
