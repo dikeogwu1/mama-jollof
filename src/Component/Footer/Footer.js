@@ -10,7 +10,7 @@ const Footer = () => {
         </h2>
         <div className='underline mb-5'></div>
         <p className='story-tittle'>
-          copyright &copy; <span>{new Date().getFullYear()}</span> Made for Mama
+          copyright &copy; <span>{new Date().getFullYear()}</span> reserved Mama
           jollo restaurant inc
         </p>
         <h5 className=''>develope by Nzedigwe Fabian Ikem</h5>

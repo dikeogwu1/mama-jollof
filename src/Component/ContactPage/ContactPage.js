@@ -21,7 +21,7 @@ const ContactPage = () => {
       <div className='nav-box'>
         <nav className='navbar navbar-expand-lg navbar-light mx-sm-5 my-sm-3'>
           <div className='container-fluid'>
-            <Link to='/' className='navbar-brand logo' href='#'>
+            <Link to='/' className='navbar-brand logo'>
               <span className='mama'>mama</span>
               <span className='jollof'>Jollof</span>
             </Link>
@@ -40,28 +40,49 @@ const ContactPage = () => {
               className='collapse navbar-collapse'
               id='navbarSupportedContent'
             >
-              <ul className='navbar-nav me-auto mb-2 mb-lg-0 bg-white'>
+              <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                 <li className='nav-item'>
-                  <Link to='/' className='nav-link ' aria-current='page'>
+                  <Link to='/' className='nav-link active' aria-current='page'>
                     <span className='mover'>Home</span>
                   </Link>
                 </li>
-                <li className='nav-item'>
-                  <Link to='/about' className='nav-link'>
-                    <span className='mover'>About</span>
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                  <Link to='/recipe' className='nav-link mover'>
-                    <span className='mover'>Our menu</span>
-                  </Link>
+                {/* dropdown */}
+
+                <li className='nav-item dropdown more-pages'>
+                  <div
+                    className='nav-link dropdown-toggle'
+                    id='navbarDropdown'
+                    role='button'
+                    data-bs-toggle='dropdown'
+                    aria-expanded='false'
+                  >
+                    <span className='mover'>Services</span>
+                  </div>
+                  <ul
+                    className='dropdown-menu'
+                    aria-labelledby='navbarDropdown'
+                  >
+                    <li>
+                      <Link to='/about' className='dropdown-item'>
+                        <span className='mover'>About</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to='/contact' className='dropdown-item'>
+                        <span className='d-active'>Contact</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className='dropdown-divider' />
+                    </li>
+                    <li>
+                      <Link to='/recipe' className='dropdown-item'>
+                        <span className='mover'>Our menu</span>
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
               </ul>
-              <div className='bg-white'>
-                <Link to='/contact'>
-                  <button className='btn btn-primary d-active'>Contact</button>
-                </Link>
-              </div>
             </div>
           </div>
         </nav>
@@ -106,12 +127,6 @@ const ContactPage = () => {
       {/* our gallery */}
       <section className='text-center p-4 p-sm-3 bg-white'>
         <h3 className='g-topic'>our gallery</h3>
-        <div className='underline mb-2'></div>
-        <p className='story-tittle'>ipsum dolor sit amet.</p>
-        <p className='categories mt-5 mb-3'>
-          <span className='all-cate'>ALL</span> / <span>DESSERTS</span> /{' '}
-          <span>RESTAURANT</span> / DINNER
-        </p>
       </section>
 
       {/* our gallery images */}

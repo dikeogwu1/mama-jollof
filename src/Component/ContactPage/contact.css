@@ -14,15 +14,6 @@ CONTACT STYLES
   height: 220px;
 }
 
-.categories {
-  max-width: 100%;
-  font-size: 0.75rem;
-}
-
-.all-cate {
-  color: var(--clr-gold);
-}
-
 .g-topic {
   font-family: 'Old Standard TT', serif;
 }
