@@ -65,11 +65,6 @@ const LandingPage = () => {
                     aria-labelledby='navbarDropdown'
                   >
                     <li>
-                      <Link to='/about' className='dropdown-item'>
-                        <span className='mover'>About</span>
-                      </Link>
-                    </li>
-                    <li>
                       <Link to='/contact' className='dropdown-item'>
                         <span className='mover'>Contact</span>
                       </Link>
@@ -89,7 +84,7 @@ const LandingPage = () => {
                 <input
                   className='form-control me-2'
                   type='search'
-                  placeholder='Search'
+                  placeholder='Search for meal'
                   aria-label='Search'
                   ref={inputContainer}
                 />
@@ -149,10 +144,10 @@ const LandingPage = () => {
         <h1>discover our story</h1>
         <div className='underline mb-5'></div>
         <p className='story-tittle'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-          quia laudantium totam. Fugiat nemo, tempora ratione praesentium facere
-          quas inventore totam odit commodi delectus dolore harum porro
-          molestias soluta sed provident consectetur omnis sequi? Quasi.
+          Mama jollof has been serving africa for the last two decates, cooking
+          like an african mother while giving her customers the best treatment.
+          Almost before we knew it, we had left the ground and moved to the
+          skies.
         </p>
       </section>
       <article className='story-box row mx-2 mx-sm-5 mb-5 justify-content-sm-evenly align-items-center'>

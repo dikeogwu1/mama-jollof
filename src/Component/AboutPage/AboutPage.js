@@ -5,76 +5,6 @@ import { Link } from 'react-router-dom'
 const AboutPage = () => {
   return (
     <div>
-      <div className='nav-box'>
-        <nav className='navbar navbar-expand-lg navbar-light mx-sm-5 my-sm-3'>
-          <div className='container-fluid'>
-            <Link to='/' className='navbar-brand logo'>
-              <span className='mama'>mama</span>
-              <span className='jollof'>Jollof</span>
-            </Link>
-            <button
-              className='navbar-toggler btn-primary'
-              type='button'
-              data-bs-toggle='collapse'
-              data-bs-target='#navbarSupportedContent'
-              aria-controls='navbarSupportedContent'
-              aria-expanded='false'
-              aria-label='Toggle navigation'
-            >
-              <span className='navbar-toggler-icon'></span>
-            </button>
-            <div
-              className='collapse navbar-collapse'
-              id='navbarSupportedContent'
-            >
-              <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                <li className='nav-item'>
-                  <Link to='/' className='nav-link active' aria-current='page'>
-                    <span className='mover'>Home</span>
-                  </Link>
-                </li>
-                {/* dropdown */}
-
-                <li className='nav-item dropdown more-pages'>
-                  <div
-                    className='nav-link dropdown-toggle'
-                    id='navbarDropdown'
-                    role='button'
-                    data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
-                    <span className='mover'>Services</span>
-                  </div>
-                  <ul
-                    className='dropdown-menu'
-                    aria-labelledby='navbarDropdown'
-                  >
-                    <li>
-                      <Link to='/about' className='dropdown-item'>
-                        <span className='d-active'>About</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to='/contact' className='dropdown-item'>
-                        <span className='mover'>Contact</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
-                    <li>
-                      <Link to='/recipe' className='dropdown-item'>
-                        <span className='mover'>Our menu</span>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-
       <section className='about-us row m-2 m-sm-5 pb-4 pb-sm-5 align-items-center'>
         <div className='about-text-wrapper col-sm-6 mb-4 mb-sm-0'>
           <h2>I'm baby coloring book poke taxidermy</h2>
@@ -98,7 +28,7 @@ const AboutPage = () => {
       </section>
 
       <section className='text-center p-4 p-sm-5 bg-white'>
-        <h1>discover our story</h1>
+        <h2>Amazing story all the way</h2>
         <div className='underline mb-5'></div>
         <p className='story-tittle'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium

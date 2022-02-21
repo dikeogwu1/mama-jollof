@@ -99,11 +99,6 @@ const SingleItem = () => {
                       aria-labelledby='navbarDropdown'
                     >
                       <li>
-                        <Link to='/about' className='dropdown-item'>
-                          <span className='mover'>About</span>
-                        </Link>
-                      </li>
-                      <li>
                         <Link to='/contact' className='dropdown-item'>
                           <span className='mover'>Contact</span>
                         </Link>
@@ -177,11 +172,6 @@ const SingleItem = () => {
                     className='dropdown-menu'
                     aria-labelledby='navbarDropdown'
                   >
-                    <li>
-                      <Link to='/about' className='dropdown-item'>
-                        <span className='mover'>About</span>
-                      </Link>
-                    </li>
                     <li>
                       <Link to='/contact' className='dropdown-item'>
                         <span className='mover'>Contact</span>

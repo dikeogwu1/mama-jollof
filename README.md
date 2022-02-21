@@ -1,16 +1,11 @@
+# description
+
+This is a restaurant website that retrives data from the (RAPID API) (https://rapidapi.com/spoonacular/api/recipe-food-nutrition/) and displays it on the menus page.\
+All verities of food are retrived from the API including the details of very food.
+
 # details
 
-PROJECT LIBRARY:
-reactjs.
-
-FRAME WORK: bootstrap 5 and custom css.
-
-EXTERNAL LIBRARY: axios.
-for fetching of api data.
-
-STATE MANAGEMENT LIB: context api.
-
-HOSTING PROVIDER: netlify.
+The website is developed with (REACT), styled with (BOOTSRAP and CUSTOM CSS), calls the rapid api with (AXIOS), manage state with (CONTEXT API) and it's hosted on (NETLITY).
 
 #### React Router Fix
 

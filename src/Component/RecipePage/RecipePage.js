@@ -106,11 +106,6 @@ const RecipePage = () => {
                       aria-labelledby='navbarDropdown'
                     >
                       <li>
-                        <Link to='/about' className='dropdown-item'>
-                          <span className='mover'>About</span>
-                        </Link>
-                      </li>
-                      <li>
                         <Link to='/contact' className='dropdown-item'>
                           <span className='mover'>Contact</span>
                         </Link>
@@ -134,7 +129,7 @@ const RecipePage = () => {
                     className='form-control me-2'
                     type='search'
                     placeholder='Search'
-                    aria-label='Search'
+                    aria-label='Search for meal'
                     ref={menuContainer}
                   />
                   <button className='btn btn-outline-success' type='submit'>
@@ -201,11 +196,6 @@ const RecipePage = () => {
                     aria-labelledby='navbarDropdown'
                   >
                     <li>
-                      <Link to='/about' className='dropdown-item'>
-                        <span className='mover'>About</span>
-                      </Link>
-                    </li>
-                    <li>
                       <Link to='/contact' className='dropdown-item'>
                         <span className='mover'>Contact</span>
                       </Link>
@@ -228,8 +218,8 @@ const RecipePage = () => {
                 <input
                   className='form-control me-2'
                   type='search'
-                  placeholder='Search'
-                  aria-label='Search'
+                  placeholder='Search for meal'
+                  aria-label='Search '
                   ref={menuContainer}
                 />
                 <button className='btn btn-outline-success' type='submit'>
